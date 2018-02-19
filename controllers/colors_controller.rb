@@ -43,7 +43,7 @@ class ColorsController < Sinatra::Base
 
   end
 
-  post '/colors' do
+  post '/colors/' do
 
     color = Color.new
 
