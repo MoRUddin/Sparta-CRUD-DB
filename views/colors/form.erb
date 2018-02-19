@@ -1,0 +1,13 @@
+<form action="/colors/<%= @color.id %>" method="POST">
+  <div>
+    <label>Favourite Colours</label>
+    <input type="text" name="favourite_colour" placeholder="Enter your favourite colour" value="<%= @color.favourite_colour %>">
+  </div>
+
+  <div>
+    <input type="submit" value="Save">
+  </div>
+  <% if(@color.id) %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>
