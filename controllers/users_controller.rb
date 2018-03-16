@@ -43,7 +43,7 @@ class UsersController < Sinatra::Base
 
   end
 
-  post '/users' do
+  post '/users/' do
 
     user = User.new
 
