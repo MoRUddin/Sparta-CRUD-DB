@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+  <script src="/js/jquery-3.3.1.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/app.js"></script>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+   <%= erb(:'partials/navigation', :layout => false) %>
+
+   <!-- our template content will be injected here -->
+   <%= yield %>
+
+</body>
+</html>

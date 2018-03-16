@@ -1,0 +1,7 @@
+<h1><%= @color.favourite_colour %></h1>
+<a href="/colors/<%= @color.id %>/edit">edit</a>
+
+<form action="/colors/<%= @color.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>
